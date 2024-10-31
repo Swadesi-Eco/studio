@@ -2264,6 +2264,7 @@ packages:
 
   boolean@3.2.0:
     resolution: {integrity: sha512-d0II/GO9uf9lfUHH2BQsjxzRJZBdsjgsBiW4BvhWk/3qoKwQFjIDVN19PfX8F2D/r9PCMTtLWjYVCFrpeYUzsw==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   boxen@5.1.2:
     resolution: {integrity: sha512-9gYgQKXx+1nP8mP7CzFyaUARhg7D3n1dF/FnErWmu9l6JvGpNUN278h0aSb+QjoiKSWG+iZ3uHrcqk0qrY9RQQ==}
@@ -2899,8 +2900,8 @@ packages:
   electron-to-chromium@1.5.33:
     resolution: {integrity: sha512-+cYTcFB1QqD4j4LegwLfpCNxifb6dDFUAwk6RsLusCwIaZI6or2f+q8rs5tTB2YC53HhOlIbEaqHMAAC8IOIwA==}
 
-  elliptic@6.5.7:
-    resolution: {integrity: sha512-ESVCtTwiA+XhY3wyh24QqRGBoP3rEdDUl3EDUUo9tft074fi19IrdpH7hLCMMP3CIj7jb3W96rn8lt/BqIlt5Q==}
+  elliptic@6.6.0:
+    resolution: {integrity: sha512-dpwoQcLc/2WLQvJvLRHKZ+f9FgOdjnq11rurqwekGQygGPsYSK29OMMD2WalatiqQ+XGFDglTNixpPfI+lpaAA==}
 
   emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -6795,18 +6796,6 @@ snapshots:
     dependencies:
       tslib: 2.7.0
 
-  '@formatjs/intl@2.10.0(typescript@5.3.2)':
-    dependencies:
-      '@formatjs/ecma402-abstract': 1.18.2
-      '@formatjs/fast-memoize': 2.2.0
-      '@formatjs/icu-messageformat-parser': 2.7.6
-      '@formatjs/intl-displaynames': 6.6.6
-      '@formatjs/intl-listformat': 7.5.5
-      intl-messageformat: 10.5.11
-      tslib: 2.7.0
-    optionalDependencies:
-      typescript: 5.3.2
-
   '@formatjs/intl@2.10.0(typescript@5.6.3)':
     dependencies:
       '@formatjs/ecma402-abstract': 1.18.2
@@ -8493,8 +8482,8 @@ snapshots:
       koa-body: 6.0.1
       node-schedule: 2.1.1
       typedoc: 0.25.10(typescript@5.3.2)
-      typedoc-github-wiki-theme: 1.1.0(typedoc-plugin-markdown@3.17.1(typedoc@0.25.10(typescript@5.6.3)))(typedoc@0.25.10(typescript@5.6.3))
-      typedoc-plugin-markdown: 3.17.1(typedoc@0.25.10(typescript@5.6.3))
+      typedoc-github-wiki-theme: 1.1.0(typedoc-plugin-markdown@3.17.1(typedoc@0.25.10(typescript@5.3.2)))(typedoc@0.25.10(typescript@5.3.2))
+      typedoc-plugin-markdown: 3.17.1(typedoc@0.25.10(typescript@5.3.2))
     transitivePeerDependencies:
       - '@types/node'
       - better-sqlite3
@@ -10015,7 +10004,7 @@ snapshots:
 
   electron-to-chromium@1.5.33: {}
 
-  elliptic@6.5.7:
+  elliptic@6.6.0:
     dependencies:
       bn.js: 4.12.0
       brorand: 1.1.0
@@ -11150,13 +11139,13 @@ snapshots:
   jwk-to-pem@2.0.5:
     dependencies:
       asn1.js: 5.4.1
-      elliptic: 6.5.7
+      elliptic: 6.6.0
       safe-buffer: 5.2.1
 
   jwk-to-pem@2.0.6:
     dependencies:
       asn1.js: 5.4.1
-      elliptic: 6.5.7
+      elliptic: 6.6.0
       safe-buffer: 5.2.1
     optional: true
 
@@ -12317,7 +12306,7 @@ snapshots:
     dependencies:
       '@formatjs/ecma402-abstract': 1.18.2
       '@formatjs/icu-messageformat-parser': 2.7.6
-      '@formatjs/intl': 2.10.0(typescript@5.3.2)
+      '@formatjs/intl': 2.10.0(typescript@5.6.3)
       '@formatjs/intl-displaynames': 6.6.6
       '@formatjs/intl-listformat': 7.5.5
       '@types/hoist-non-react-statics': 3.3.5
@@ -13279,10 +13268,20 @@ snapshots:
     dependencies:
       is-typedarray: 1.0.0
 
+  typedoc-github-wiki-theme@1.1.0(typedoc-plugin-markdown@3.17.1(typedoc@0.25.10(typescript@5.3.2)))(typedoc@0.25.10(typescript@5.3.2)):
+    dependencies:
+      typedoc: 0.25.10(typescript@5.3.2)
+      typedoc-plugin-markdown: 3.17.1(typedoc@0.25.10(typescript@5.3.2))
+
   typedoc-github-wiki-theme@1.1.0(typedoc-plugin-markdown@3.17.1(typedoc@0.25.10(typescript@5.6.3)))(typedoc@0.25.10(typescript@5.6.3)):
     dependencies:
       typedoc: 0.25.10(typescript@5.6.3)
       typedoc-plugin-markdown: 3.17.1(typedoc@0.25.10(typescript@5.6.3))
+
+  typedoc-plugin-markdown@3.17.1(typedoc@0.25.10(typescript@5.3.2)):
+    dependencies:
+      handlebars: 4.7.8
+      typedoc: 0.25.10(typescript@5.3.2)
 
   typedoc-plugin-markdown@3.17.1(typedoc@0.25.10(typescript@5.6.3)):
     dependencies:
